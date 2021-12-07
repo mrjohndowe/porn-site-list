@@ -5338,21 +5338,21 @@
     },
     {
         "protocol": "http",
-        "domain": "magic-wigs.co",
+        "domain": "magic-wigs.com",
         "path": null,
         "subdomain": null,
         "host": "magic-wigs",
-        "tld": "co",
-        "parent_domain": "magic-wigs.co"
+        "tld": "com",
+        "parent_domain": "magic-wigs.com"
     },
     {
         "protocol": "http",
-        "domain": "actual-porn.or",
+        "domain": "actual-porn.org",
         "path": null,
         "subdomain": null,
         "host": "actual-porn",
-        "tld": "or",
-        "parent_domain": "actual-porn.or"
+        "tld": "org",
+        "parent_domain": "actual-porn.org"
     },
     {
         "protocol": "http",
@@ -5471,6 +5471,7 @@
         "subdomain": null,
         "tld": "net",
         "domain": "incezt.net",
+		"parent_domain": null,
         "ip": [
             "46.229.172.135"
         ]
@@ -5484,6 +5485,7 @@
         "subdomain": null,
         "tld": "com",
         "domain": "semprot.com",
+		"parent_domain": null,
         "ip": [
             "96.30.52.192"
         ]
@@ -5497,6 +5499,7 @@
         "subdomain": null,
         "tld": "com",
         "domain": "bokep.com",
+		"parent_domain": null,
         "ip": [
             "209.15.13.134"
         ]
@@ -5510,8 +5513,23 @@
         "subdomain": "www",
         "tld": "com",
         "domain": "sambaporno.com",
+		"parent_domain": null,
         "ip": [
             "64.188.56.171"
         ]
-    }
+    },
+	{
+		"protocol": "https:",
+		"host": "trendyporn",
+		"port": null,
+		"hostname": "trendyporn.com",
+		"path": null,
+		"subdomain":"www",
+		"tld":"com",
+		"domain":"trendyporn.com",
+		"parent_domain": null,
+		"ip":[
+			"104.21.233.187"
+		]
+	}
 ]
