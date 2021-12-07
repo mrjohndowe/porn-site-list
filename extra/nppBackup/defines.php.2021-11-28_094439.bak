@@ -1,0 +1,20 @@
+<?php
+	
+	
+	$errorMSG = '<hr class="alert "><div class="oaerror danger">Your Device is not on the trusted list.... Please ask the admin to add <b class="alert alert-warning"><u>[[ '.$ip.' ]]</u></b> and then try again.</div>';
+	if(!$loggedIn || empty($_SESSION['username']))exit($errorMSG);
+	
+	$settings = [
+		'username' => $_SESSION['username'],
+		'session_name' => $_SESSION['name'],
+		'PAGE_TITLE' => 'Big List of Porn Sites',
+	
+	];
+	
+	FOREACH($settings as $name => $val){
+		define(strtoupper($name),$val);
+	}
+	
+	//define('PAGE_TITLE', 'Big List of Porn Sites');
+
+?>

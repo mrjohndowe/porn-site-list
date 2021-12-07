@@ -1,25 +1,11 @@
 <?php
-<<<<<<< HEAD
-
+	
+	
+	
 	function getFavs($ip,$siteid){
 		GLOBAL $db;
-		$q = 'SELECT count(id) FROM users WHERE ip_address = :ip AND siteid = :siteid';
+		$q = 'SELECT id FROM favorite_sites WHERE ip_address = :ip AND siteid = :siteid';
 		$p = [':ip' => $ip,':siteid' => $siteid];
-		$stmt = $db->prepare($q);
-		$result = $stmt->execute($p);
-		$fav = $stmt->fetch()['count(id)'];
-		$fav = !empty($fav) ? true : false;
-		return $fav;
-	}
-	
-=======
-	
-	
-	
-	function getFavs($user,$siteid){
-		GLOBAL $db;
-		$q = 'SELECT id FROM favorite_sites WHERE username = :user AND siteid = :siteid';
-		$p = [':user' => $user,':siteid' => $siteid];
 		$stmt = $db->prepare($q);
 		$result = $stmt->execute($p);
 		$fav = $stmt->fetch();
@@ -56,18 +42,13 @@
 		return $loggedIN;		
 	}
 	
->>>>>>> master
 	function getSiteInfo($id){
 		GLOBAL $db;
 		
 		$q = "SELECT * FROM sites WHERE id = $id";
 		$stmt = $db->prepare($q);
 		$result = $stmt->execute();
-<<<<<<< HEAD
-		$row = $stmt->fetch();
-=======
 		$row = $stmt->fetchAll();
->>>>>>> master
 		
 		return $row;
 	}
