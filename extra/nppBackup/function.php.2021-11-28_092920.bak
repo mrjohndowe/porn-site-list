@@ -1,0 +1,45 @@
+<?php
+
+	function getFavs($ip,$siteid){
+		GLOBAL $db;
+		$q = 'SELECT id FROM favorite_sites WHERE ip_address = :ip AND siteid = :siteid';
+		$p = [':ip' => $ip,':siteid' => $siteid];
+		$stmt = $db->prepare($q);
+		$result = $stmt->execute($p);
+		$fav = $stmt->fetch();
+		$fav = !empty($fav['id']) ? true : false;
+		return $fav;
+	}
+	
+	function checkLogin($ip_address){
+		
+		$approvedIP = [
+			'192.168.1.25',
+			'192.168.1.70',
+		];
+		$users = [
+			'192.168.1.25' => 'MrJohnDowe',
+			'192.168.1.70' => 'MrJohnDowe',
+		];
+		
+		$loggedIN = IN_ARRAY($approvedIP,$users) ? TRUE : FALSE;
+		$username = $loggedIN == TRUE ? $users[$ip_address] : 'NO USERNAME FOUND';
+		
+		$_SESSION['username'] = $username;
+		
+		session_start();
+		return $loggedIN;		
+	}
+	
+	function getSiteInfo($id){
+		GLOBAL $db;
+		
+		$q = "SELECT * FROM sites WHERE id = $id";
+		$stmt = $db->prepare($q);
+		$result = $stmt->execute();
+		$row = $stmt->fetchAll();
+		
+		return $row;
+	}
+
+?>
