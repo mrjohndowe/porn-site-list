@@ -18,6 +18,7 @@
 		$path = $pathLink == TRUE && $row['path'] != "null" ? $row['path'] : '';
 		$header = $href.$path;
 		
+<<<<<<< HEAD
 		 $approvedDevices = [
             '192.168.1.70', 
 			'192.168.1.25', 
@@ -31,6 +32,8 @@
 		}
 		
 		
+=======
+>>>>>>> master
 		$clickCount = $row['click_count'];
 		$q = "UPDATE sites SET click_count = :click WHERE id = :id";
 		$p = [':id' => $id, ':click' => $clickCount + 1];

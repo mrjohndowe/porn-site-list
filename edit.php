@@ -7,6 +7,20 @@
 	$id = intval($id);
 	$page = isset($_GET['p']) ? $_GET['p'] : 1;
 	$self = $_SERVER['PHP_SELF'];
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+	$row = getSiteInfo($id);
+	
+	$domain = $row['domain'];
+	$path = $row['path'];
+	$displayName = $row['display_name'];
+	$subdomain = $row['subdomain'];
+	$host = $row['host'];
+	$tld = $row['tld'];
+	$protocol = $row['protocol'];
+=======
+>>>>>>> master
 	$rows = getSiteInfo($id);
 	
 	//$domain = !empty($row['domain']) ? $row['domain']: "";
@@ -19,6 +33,10 @@
 		$tld = $row['tld'];
 		$protocol = $row['protocol'];
 	endforeach;
+<<<<<<< HEAD
+=======
+>>>>>>> master
+>>>>>>> master
 	
 	
 	
@@ -71,7 +89,15 @@
 			break;
 	}
 	
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+	$displayName = strip_tags($displayName);
+=======
+
+>>>>>>> master
+>>>>>>> master
 ?>
 	<div style="width:500px;" class="container container-pad">
 		<h1>Edit Database</h1>
@@ -103,4 +129,8 @@
 			
 		</form>
 	</div>
+<<<<<<< HEAD
 	<?php } ?>
+=======
+	<? } ?>
+>>>>>>> master
