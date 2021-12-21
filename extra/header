@@ -1,13 +1,19 @@
 <link href="../.global/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
     ini_set('display_errors',1);
     error_reporting(E_ALL);
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> master
 	$self = $_SERVER['PHP_SELF'];
 	require_once 'includes/liteConnect.php';
 	require_once 'function.php';
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
 >>>>>>> master
 	function_exists('phpwin') && phpwin(); 
@@ -17,6 +23,9 @@
 	require_once 'function.php';
 	define('PAGE_TITLE', 'Big List of Porn Sites');
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 >>>>>>> master
@@ -53,13 +62,19 @@
 	
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> master
 	define('PAGE_TITLE', 'Big List of Porn Sites');
 =======
 	
 >>>>>>> master
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 	
 	$heart = '<svg viewBox="0 0 512 512" width="100" title="heartbeat">

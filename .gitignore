@@ -24,7 +24,11 @@ build/Release
 # see https://npmjs.org/doc/faq.html#Should-I-check-my-node_modules-folder-into-git
 node_modules
 <<<<<<< HEAD
+<<<<<<< HEAD
 authorized_keys/
+=======
+authorized_keys
+>>>>>>> master
 =======
 authorized_keys
 >>>>>>> master

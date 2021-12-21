@@ -1,7 +1,10 @@
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> master
 
 	function getFavs($ip,$siteid){
 		GLOBAL $db;
@@ -14,6 +17,9 @@
 		return $fav;
 	}
 	
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
 >>>>>>> master
 	
@@ -36,6 +42,7 @@
 			'192.168.1.25',
 			'192.168.1.70',
 <<<<<<< HEAD
+<<<<<<< HEAD
 			'192.168.1.142',
             '192.168.1.189',
             '192.168.1.0/24'
@@ -46,11 +53,16 @@
 			'192.168.1.70' => 'MrJohnDowe',
 			'192.168.1.189' => 'MrJohnDowe',
 =======
+=======
+>>>>>>> master
 			'192.168.1.142'
 		];
 		$users = [
 			'192.168.1.25' => 'MrJohnDowe',
 			'192.168.1.70' => 'MrJohnDowe',
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 			$approvedIP[2] => "Sierra Braunns"
 		];
@@ -72,6 +84,9 @@
 	}
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 >>>>>>> master
@@ -82,13 +97,19 @@
 		$stmt = $db->prepare($q);
 		$result = $stmt->execute();
 <<<<<<< HEAD
+<<<<<<< HEAD
 		$row = $stmt->fetchAll();
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> master
 		$row = $stmt->fetch();
 =======
 		$row = $stmt->fetchAll();
 >>>>>>> master
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 		
 		return $row;

@@ -19,6 +19,7 @@
 		$header = $href.$path;
 		
 <<<<<<< HEAD
+<<<<<<< HEAD
 		 $approvedDevices = [
             '192.168.1.70', 
 			'192.168.1.25', 
@@ -32,6 +33,8 @@
 		}
 		
 		
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 		$clickCount = $row['click_count'];

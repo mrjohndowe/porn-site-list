@@ -1,7 +1,10 @@
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> master
 /*
 Author: Javed Ur Rehman
 Website: https://www.allphptricks.com
@@ -66,6 +69,9 @@ require_once 'extra/header';
 	$newAddition = $total_records == 0 ? $addSite : "$addSite $total_records Records Found For $search";
 	
 	$newAddition = $search ? $newAddition : '';
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
 >>>>>>> master
 /**
@@ -140,6 +146,9 @@ Website: https://www.allphptricks.com
 
     $newAddition = $search ? $newAddition : '';
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 >>>>>>> master
@@ -148,8 +157,11 @@ Website: https://www.allphptricks.com
 <?=$newAddition?>
 <table class="table table-striped table-bordered">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> master
 <thead>
 <tr>
 <th style="width:50px;">No.</th>
@@ -215,6 +227,9 @@ Website: https://www.allphptricks.com
 	}
     ?>
 	</tbody>
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
 >>>>>>> master
     <thead>
@@ -300,6 +315,9 @@ Website: https://www.allphptricks.com
     ?>
     </tbody>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 >>>>>>> master
@@ -310,8 +328,11 @@ Website: https://www.allphptricks.com
 </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> master
 	<ul class="pagination">
 		<?php // if($page_no > 1){ echo "<li><a href='?page_no=1'>First Page</a></li>"; } ?>
 		
@@ -383,6 +404,9 @@ Website: https://www.allphptricks.com
 			echo "<li><a href='?page_no=$total_no_of_pages'>Last &rsaquo;&rsaquo;</a></li>";
 			} ?>
 	</ul>
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
 >>>>>>> master
     <ul class="pagination">
@@ -457,6 +481,9 @@ Website: https://www.allphptricks.com
             } ?>
     </ul>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 >>>>>>> master
