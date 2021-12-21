@@ -1,27 +1,4 @@
 <?php
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> master
-
-	function getFavs($ip,$siteid){
-		GLOBAL $db;
-		$q = 'SELECT count(id) FROM users WHERE ip_address = :ip AND siteid = :siteid';
-		$p = [':ip' => $ip,':siteid' => $siteid];
-		$stmt = $db->prepare($q);
-		$result = $stmt->execute($p);
-		$fav = $stmt->fetch()['count(id)'];
-		$fav = !empty($fav) ? true : false;
-		return $fav;
-	}
-	
-=======
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> master
 	
 	
 	
@@ -41,8 +18,6 @@
 		$approvedIP = [
 			'192.168.1.25',
 			'192.168.1.70',
-<<<<<<< HEAD
-<<<<<<< HEAD
 			'192.168.1.142',
             '192.168.1.189',
             '192.168.1.0/24'
@@ -52,18 +27,6 @@
 			'192.168.1.25' => 'MrJohnDowe',
 			'192.168.1.70' => 'MrJohnDowe',
 			'192.168.1.189' => 'MrJohnDowe',
-=======
-=======
->>>>>>> master
-			'192.168.1.142'
-		];
-		$users = [
-			'192.168.1.25' => 'MrJohnDowe',
-			'192.168.1.70' => 'MrJohnDowe',
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> master
 			$approvedIP[2] => "Sierra Braunns"
 		];
 		
@@ -83,34 +46,13 @@
 		return $loggedIN;		
 	}
 	
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
->>>>>>> master
->>>>>>> master
 	function getSiteInfo($id){
 		GLOBAL $db;
 		
 		$q = "SELECT * FROM sites WHERE id = $id";
 		$stmt = $db->prepare($q);
 		$result = $stmt->execute();
-<<<<<<< HEAD
-<<<<<<< HEAD
 		$row = $stmt->fetchAll();
-=======
-<<<<<<< HEAD
-=======
->>>>>>> master
-		$row = $stmt->fetch();
-=======
-		$row = $stmt->fetchAll();
->>>>>>> master
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> master
 		
 		return $row;
 	}
