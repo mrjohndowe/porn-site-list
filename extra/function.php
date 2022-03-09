@@ -17,15 +17,17 @@
 		
 		$approvedIP = [
 			'192.168.1.25',
-			'192.168.1.70',
+			'192.168.1.55',
+			'192.168.0.75',
 			'192.168.1.142',
             '192.168.0.10'
 		];
 		$users = [
 			'192.168.1.25' => 'MrJohnDowe',
 			'192.168.1.70' => 'MrJohnDowe',
+			'192.168.0.75' => 'MrJohnDowe',
 			'192.168.0.10' => 'MrJohnDowe',
-			$approvedIP[2] => "Sierra Braunns"
+			$approvedIP[1] => "Sierra Braunns"
 		];
 		
 		$loggedIN = IN_ARRAY($ip_address,$approvedIP) ? TRUE : FALSE;
@@ -54,5 +56,16 @@
 		
 		return $row;
 	}
+    
+    function getIPaddress($ip_address){
+        GLOBAL $db;
+        
+        $q = "SELECT * FROM users WHERE ip_address = $ip_address AND admin = 1";
+        $stmt = $db->prepare($q);
+        $result = $stmt->execute();
+        $row = $stmt->fetchAll();
+        
+        return $row;
+    }
 
 ?>

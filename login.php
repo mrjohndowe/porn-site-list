@@ -19,11 +19,15 @@
 		$header = $href.$path;
 		
          $approvedDevices = [
+            '192.168.0.75', 
             '192.168.1.70', 
 			'192.168.1.25', 
 			'192.168.1.50',
             '192.168.0.10'
         ];
+        
+       
+        
 		$client = $_SERVER['REMOTE_ADDR'];
         if(in_array($client,$approvedDevices)){
 			header("Location: $header");
