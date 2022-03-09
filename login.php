@@ -17,19 +17,7 @@
 		$href = $protocol.$sub.$host.'.'.$tld.'/';
 		$path = $pathLink == TRUE && $row['path'] != "null" ? $row['path'] : '';
 		$header = $href.$path;
-        
-		 $approvedDevices = [
-            '192.168.1.70', 
-			'192.168.1.25', 
-			'192.168.1.50'
-        ];
-		$client = $_SERVER['REMOTE_ADDR'];
 		
-		if(in_array($client,$approvedDevices)){
-			header("Location: $header");
-			exit;
-		}
-
 		$clickCount = $row['click_count'];
 		$q = "UPDATE sites SET click_count = :click WHERE id = :id";
 		$p = [':id' => $id, ':click' => $clickCount + 1];

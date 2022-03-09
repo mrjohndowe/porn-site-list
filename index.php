@@ -90,7 +90,7 @@ Website: https://www.allphptricks.com
 
 
 
-    $q = "SELECT * FROM sites WHERE active = 1 $sql ORDER BY click_count DESC $limit ";
+    $q = "SELECT * FROM sites WHERE active = 1 $sql ORDER BY click_count DESC , timestamp DESC $limit ";
     $stmt = $db->prepare($q);
     $result = $stmt->execute();
     $rows = $stmt->fetchAll();
@@ -138,7 +138,7 @@ Website: https://www.allphptricks.com
         $favorite = '<a class="fav '.$myFav.'" href="?page_no='.$page_no.'&'.$fav.'='.$id.'"><i class="fa fa-heartbeat"></i></a>';
 
         $approvedDevices = [
-            '192.168.1.70', '192.168.1.25', '192.168.1.50'
+            '192.168.1.70', '192.168.1.25', '192.168.1.50','192.168.0.10'
         ];
         $actionList = !in_array($ip , $approvedDevices) && !empty($ip)? $favorite : $favorite." | ".$deleteRow." | ".$editRow ;
         //$onlyFavs = isset($_GET['onlyFavs']) ? true : false;
